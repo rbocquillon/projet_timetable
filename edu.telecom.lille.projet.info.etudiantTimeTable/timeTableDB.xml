@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TimeTablesDB>
+  <Rooms>
+    <Room>
+      <RoomID>5</RoomID>
+      <Capacity>92</Capacity>
+    </Room>
+    <Room>
+      <RoomID>4</RoomID>
+      <Capacity>120</Capacity>
+    </Room>
+    <Room>
+      <RoomID>3</RoomID>
+      <Capacity>150</Capacity>
+    </Room>
+    <Room>
+      <RoomID>2</RoomID>
+      <Capacity>100</Capacity>
+    </Room>
+    <Room>
+      <RoomID>1</RoomID>
+      <Capacity>50</Capacity>
+    </Room>
+  </Rooms>
+  <TimeTables>
+    <TimeTable>
+      <GroupID>2</GroupID>
+      <Books>
+        <Book>
+          <BookingId>2</BookingId>
+          <Login>HG</Login>
+          <DateBegin>08/03/2018 13:10:00</DateBegin>
+          <DateEnd>08/03/2018 16:45:00</DateEnd>
+          <RoomId>4</RoomId>
+        </Book>
+        <Book>
+          <BookingId>1</BookingId>
+          <Login>HG</Login>
+          <DateBegin>07/03/2018 08:15:00</DateBegin>
+          <DateEnd>07/03/2018 10:45:00</DateEnd>
+          <RoomId>1</RoomId>
+        </Book>
+      </Books>
+    </TimeTable>
+    <TimeTable>
+      <GroupID>1</GroupID>
+      <Books>
+        <Book>
+          <BookingId>3</BookingId>
+          <Login>MF</Login>
+          <DateBegin>08/04/2016 16:00:00</DateBegin>
+          <DateEnd>08/04/2016 18:00:00</DateEnd>
+          <RoomId>3</RoomId>
+        </Book>
+        <Book>
+          <BookingId>2</BookingId>
+          <Login>GS</Login>
+          <DateBegin>07/04/2016 08:15:00</DateBegin>
+          <DateEnd>07/04/2016 11:45:00</DateEnd>
+          <RoomId>2</RoomId>
+        </Book>
+        <Book>
+          <BookingId>1</BookingId>
+          <Login>MF</Login>
+          <DateBegin>06/04/2016 13:00:00</DateBegin>
+          <DateEnd>06/04/2016 17:00:00</DateEnd>
+          <RoomId>1</RoomId>
+        </Book>
+        <Book>
+          <BookingId>0</BookingId>
+          <Login>GS</Login>
+          <DateBegin>06/04/2016 08:00:00</DateBegin>
+          <DateEnd>06/04/2016 10:00:00</DateEnd>
+          <RoomId>1</RoomId>
+        </Book>
+      </Books>
+    </TimeTable>
+  </TimeTables>
+</TimeTablesDB>
