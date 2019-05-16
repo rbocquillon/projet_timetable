@@ -14,29 +14,27 @@ import timeTableModel.Room;
 import timeTableModel.TimeTableDB;
 /**
  * Cette classe est le controleur d'emplois du temps que vous devez implementer. 
- * Elle contient un attribut correspondant a� la base de donnees d'emplois du temps que vous allez créer.
- * Elle contient toutes les fonctions de l'interface ITimeTableController que vous devez implémenter.
+ * Elle contient un attribut correspondant a  la base de donnees d'emplois du temps que vous allez crÃ©er.
+ * Elle contient toutes les fonctions de l'interface ITimeTableController que vous devez implÃ©menter.
  * 
- * @author Jose Mennesson (Mettre àjour)
- * @version 04/2016 (Mettre � jour)
+ * @author Hugo & Robin
+ * @version 06/2018
  * 
  */
-
-//TODO Classe à modifier
 
 public class TimeTableController implements ITimeTableController{
 
 	/**
-	 * Contient une instance de base de données d'emplois du temps
+	 * Contient une instance de base de donnÃ©es d'emplois du temps
 	 * 
 	 */
 	TimeTableDB tTDB;
 	/**
 	 *
-	 * Constructeur de controleur d'emplois du temps créant la base de données d'emplois du temps
+	 * Constructeur de controleur d'emplois du temps crÃ©ant la base de donnÃ©es d'emplois du temps
 	 * 
 	 * @param tTfile
-	 * 		Fichier XML contenant la base de données d'emplois du temps
+	 * 		Fichier XML contenant la base de donnÃ©es d'emplois du temps
 	 */
 	public TimeTableController(String tTfile) {
 		TimeTableDB tTDB=new TimeTableDB(tTfile);
@@ -167,7 +165,7 @@ public class TimeTableController implements ITimeTableController{
 
 	@Override
 	public void getBookingsDate(int timeTableId, Hashtable<Integer, Date> dateBegin, Hashtable<Integer, Date> dateEnd) {
-		// remplir les hashtables begin et end � partir de l'EDT dont l'ID est timeTableId
+		// remplir les hashtables begin et end à partir de l'EDT dont l'ID est timeTableId
 		//dateBegin.put(arg0, arg1);
 		for(Entry<Integer, Reservation> entry:tTDB.getEmploiDuTemps().get(""+timeTableId).getReservations().entrySet()) {
 			dateBegin.put(entry.getKey(),entry.getValue().getStartDate().getTime());
